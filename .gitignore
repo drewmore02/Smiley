@@ -1,3 +1,6 @@
+# Root level files
+node_modules/
+
 # Node
 frontend/node_modules
 

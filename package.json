@@ -1,0 +1,24 @@
+{
+  "name": "smiley",
+  "version": "1.0.0",
+  "description": "React and Django project",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm start --prefix frontend\" \"cd backend && python manage.py runserver\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/drewmore02/Smiley.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewmore02/Smiley/issues"
+  },
+  "homepage": "https://github.com/drewmore02/Smiley#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
