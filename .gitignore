@@ -8,6 +8,18 @@ frontend/node_modules
 backend/venv
 backend/backend/__pycache__
 backend/*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore pycache directories in any folder (including migrations)
+**/__pycache__/
 
 # Environment files
 *.env
+
+# MacOS Specific files
+*.DS_Store
+
+# VSCode specific files
+.vscode/

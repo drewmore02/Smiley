@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm start --prefix frontend\" \"cd backend && python manage.py runserver\"",
+    "start-backend": "cd backend && pg_isready || (echo 'PostgreSQL is not running! Start it first.' && exit 1) && python manage.py runserver",
+    "setup-frontend": "cd frontend && npm install",
     "setup-backend": "cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
