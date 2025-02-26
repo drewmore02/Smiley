@@ -3,12 +3,20 @@
   "version": "1.0.0",
   "description": "React and Django project",
   "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "clipboardy": "^4.0.0",
+    "dotenv": "^16.4.7",
+    "open": "^10.1.0",
+    "prompt-sync": "^4.2.0"
+  },
   "scripts": {
     "start": "concurrently \"npm start --prefix frontend\" \"cd backend && python manage.py runserver\"",
     "start-backend": "cd backend && pg_isready || (echo 'PostgreSQL is not running! Start it first.' && exit 1) && python manage.py runserver",
     "setup-frontend": "cd frontend && npm install",
     "setup-backend": "cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt",
-
+    "open-backend": "node scripts/open-backend.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
