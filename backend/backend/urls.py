@@ -41,4 +41,6 @@ urlpatterns = [
     path('api/person/', include('apps.person.urls')),
     path('api/users/', include('apps.users.urls')),
     path('api/housing/', include('apps.housing.urls')),
+    path('api/camp/', include('apps.camp.urls')),
+    path('api/program/', include('apps.program.urls')),
 ]

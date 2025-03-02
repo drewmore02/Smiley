@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'apps.person',
     'apps.users',
     'apps.housing',
+    'apps.camp',
+    'apps.program',
     'drf_yasg',
 ]
 
