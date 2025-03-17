@@ -15,7 +15,7 @@ class Area(models.Model):
     name = models.CharField(max_length=255)
 
     # TODO: use a library for geolocation data instead of JSONField
-    geo_location = models.JSONField()  # Store latitude & longitude as a JSON fiel
+    geo_location = models.JSONField()  # Store latitude & longitude as a JSON field
     
     camp = models.ForeignKey(Camp, on_delete=models.CASCADE, related_name="areas")
     director = models.ForeignKey(
