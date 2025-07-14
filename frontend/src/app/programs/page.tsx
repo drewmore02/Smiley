@@ -3,7 +3,7 @@ import { Program } from "@/models/program";
 
 async function getPrograms(): Promise<Program[]> {
   // This fetch runs on the server!
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/programs/`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/program/programs`, {
     // Use 'no-cache' during development to always get fresh data
     cache: "no-cache",
   });

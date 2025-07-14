@@ -1,6 +1,4 @@
-// scripts/run-backend.js
-
-import 'dotenv/config'; // Load environment variables from .env
+import 'dotenv/config';
 import axios from 'axios';
 import clipboardy from 'clipboardy';
 import open from 'open';
